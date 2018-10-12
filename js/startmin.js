@@ -34,3 +34,10 @@ $(function() {
         element.addClass('active');
     }
 });
+
+var mymap = L.map('minemap').setView([-33.6389105, 147.3647931], 13);
+
+L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
+    maxZoom: 20,
+    subdomains:['mt0','mt1','mt2','mt3']
+}).addTo(mymap);

@@ -27,6 +27,10 @@
         <!-- Custom Fonts -->
         <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+  integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+  crossorigin=""/>
+
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -276,9 +280,8 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <i class="fa fa-bar-chart-o fa-fw"></i> Map
-                                <div>
-     <iframe width="800" height="400" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=800&cp=-33.6389105~147.3847931&lvl=14&typ=d&sty=h&src=SHELL&FORM=MBEDV8" scrolling="no">
-     </iframe>
+                                <div id="minecontainer">
+<div id="minemap" style="height: 400px;"></div>
      <div style="white-space: nowrap; text-align: center; width: 800px; padding: 6px 0;">
         <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=-33.6389105~147.3847931&amp;sty=h&amp;lvl=14&amp;FORM=MBEDLD">View Larger Map</a> &nbsp; | &nbsp;
         <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=-33.6389105~147.3847931&amp;sty=h&amp;lvl=14&amp;rtp=~pos.-33.6389105_147.3847931____&amp;FORM=MBEDLD">Get Directions</a>
@@ -343,6 +346,7 @@
                                             <span class="pull-right text-muted small"><em>x minutes away</em>
                                             </span>
                                     </a>
+                                    
                                     <a href="#" class="list-group-item">
                                         <i class="fa fa-truck fa-fw"></i> Truck9
                                             <span class="pull-right text-muted small"><em>5 minutes away</em>
@@ -385,6 +389,7 @@
                                     </a>
                                    
                                     
+
                                 <!-- /.list-group -->
                                 <a href="#" class="btn btn-default btn-block">View All Alerts</a>
                             </div>
@@ -560,9 +565,14 @@
         <script src="../js/raphael.min.js"></script>
         <script src="../js/morris.min.js"></script>
         <script src="../js/morris-data.js"></script>
+        <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+  integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+  crossorigin=""></script>
 
         <!-- Custom Theme JavaScript -->
         <script src="../js/startmin.js"></script>
+
 
     </body>
 </html>
