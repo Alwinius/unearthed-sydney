@@ -45,7 +45,8 @@ L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
 var truckIcon = L.icon({
     iconUrl: '../css/truck_pin.png',
     iconSize: [38, 44],
-    iconAnchor: [19, 44]
+    iconAnchor: [19, 44],
+    popupAnchor: [0, -44],
 });
 
 var diggerIcon = L.icon({
@@ -54,14 +55,41 @@ var diggerIcon = L.icon({
     iconAnchor: [19, 44]
 });
 
-L.marker([-33.633417,147.4039743,965], {icon: truckIcon}).addTo(mymap);
-L.marker([-33.634309, 147.410360,965], {icon:truckIcon}).addTo(mymap);
-L.marker([-33.630567,147.3842453,966], {icon: truckIcon}).addTo(mymap);
-L.marker([-33.647409,147.3951163,965], {icon: truckIcon}).addTo(mymap);
-L.marker([-33.638873, 147.404173,965], {icon: truckIcon}).addTo(mymap);
-L.marker([-33.643578, 147.405256,965], {icon: truckIcon}).addTo(mymap);
-L.marker([-33.637958, 147.399579,965], {icon: truckIcon}).addTo(mymap);
+var t2 = L.marker([-33.633417,147.4039743,965], {icon:truckIcon}).addTo(mymap);
+t2.bindPopup("TRH401");
+var t1 = L.marker([-33.634309, 147.410360,965], {icon:truckIcon, title: "TRH414"}).addTo(mymap);
+t1.bindPopup("TRH414");
+var t2 = L.marker([-33.630567,147.3842453,966], {icon:truckIcon}).addTo(mymap);
+t2.bindPopup("TRH403");
+var t2 = L.marker([-33.647409,147.3951163,965], {icon:truckIcon}).addTo(mymap);
+t2.bindPopup("TRH404");
+var t2 = L.marker([-33.638873, 147.404173,965], {icon:truckIcon}).addTo(mymap);
+t2.bindPopup("TRH405");
+var t2 = L.marker([-33.643578, 147.405256,965], {icon:truckIcon}).addTo(mymap);
+t2.bindPopup("TRH406");
+var t2 = L.marker([-33.637958, 147.399579,965], {icon:truckIcon}).addTo(mymap);
+t2.bindPopup("TRH407");
+var t2 = L.marker([-33.646422, 147.404487,965], {icon:truckIcon}).addTo(mymap);
+t2.bindPopup("TRH407");
+var t2 = L.marker([-33.632167, 147.391737,965], {icon:truckIcon}).addTo(mymap);
+t2.bindPopup("TRH407");
+var t2 = L.marker([-33.634173, 147.398624,965], {icon:truckIcon}).addTo(mymap);
+t2.bindPopup("TRH407");
+var t2 = L.marker([-33.637518, 147.386667,965], {icon:truckIcon}).addTo(mymap);
+t2.bindPopup("TRH407");
+var t2 = L.marker([-33.644556, 147.378935,965], {icon:truckIcon}).addTo(mymap);
+t2.bindPopup("TRH407");
+var t2 = L.marker([-33.638925, 147.408669,965], {icon:truckIcon}).addTo(mymap);
+t2.bindPopup("TRH407");
+var t2 = L.marker([-33.634694, 147.395121,965], {icon:truckIcon}).addTo(mymap);
+t2.bindPopup("TRH407");
+var t2 = L.marker([-33.642234, 147.398453,965], {icon:truckIcon}).addTo(mymap);
+t2.bindPopup("TRH407");
 
-L.marker([-33.636479, 147.405260,965], {icon: diggerIcon}).addTo(mymap);
-L.marker([-33.636740, 147.410111,1368], {icon: diggerIcon}).addTo(mymap);
-//L.marker([-33.633417,147.4039743,965], {icon: truckIcon}).addTo(mymap);
+
+var t2 = L.marker([-33.636479, 147.405260,965], {icon: diggerIcon}).addTo(mymap);
+t2.bindPopup("LDR403");
+var t2 = L.marker([-33.636740, 147.410111,1368], {icon: diggerIcon}).addTo(mymap);
+t2.bindPopup("LDR402");
+var t2 = L.marker([-33.634792, 147.409573,965], {icon: diggerIcon}).addTo(mymap);
+t2.bindPopup("LDR401");
