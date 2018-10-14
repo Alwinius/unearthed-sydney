@@ -197,8 +197,8 @@
                                         <i class="fa fa-truck fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
-                                        <div class="huge">5/16</div>
-                                        <div>IDLE Trucks</div>
+                                        <div class="huge">LDR401</div>
+                                        <div>Allocated Loader</div>
                                     </div>
                                 </div>
                             </div>
@@ -220,8 +220,8 @@
                                         <i class="fa fa-tasks fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
-                                        <div class="huge">+1%</div>
-                                        <div>Productivity</div>
+                                        <div class="huge">189t</div>
+                                        <div>Target Load</div>
                                     </div>
                                 </div>
                             </div>
@@ -243,7 +243,7 @@
                                         <i class="fa fa-shopping-cart fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
-                                        <div class="huge">1837t</div>
+                                        <div class="huge">1837t/1800t</div>
                                         <div>Material Hauled this Shift</div>
                                     </div>
                                 </div>
@@ -284,166 +284,107 @@
                 </div>
                 <!-- /.row -->
                 <div class="row">
-                    <div class="col-lg-8">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <i class="fa fa-bar-chart-o fa-fw"></i> Map
-                                <div id="minecontainer">
-<div id="minemap" style="height: 600px;"></div>
-     <div style="white-space: nowrap; text-align: center; padding: 6px 0;">
-       <a id="largeMapLink" target="_blank" href="https://www.google.com.au/maps/@-33.6389929,147.3893479,4592m/data=!3m1!1e3">View Larger Map</a> &nbsp; | &nbsp;
-       <a id="dirMapLink" target="_blank" href="https://www.google.com.au/maps/dir//Evolution+Mining%2FBarrick+Gold+Mine,+Lake+Cowal+NSW+2671/">Get Directions</a>
-    </div>
-</div>
-                            </div>
-                            <!-- /.panel-heading -->
-
-                        </div>
-                        <!-- /.panel -->
-                        <div class="panel panel-default">
+                    <div class="col-lg-6">
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <i class="fa fa-clock-o fa-fw"></i> Dispatch Dialogue
+                          </div>
+                          <!-- /.panel-heading -->
                           <div class="panel-body">
-                              <div id="morris-area-chart"></div>
+                            <button class="btn btn-lg">Record event</button>
+                            <button class="btn btn-lg">Update event</button>
+                              <ul class="timeline">
+                                  <li>
+                                      <div class="timeline-badge"><i class="fa fa-check"></i>
+                                      </div>
+                                      <div class="timeline-panel">
+                                          <div class="timeline-heading">
+                                              <h4 class="timeline-title">Event</h4>
+
+                                              <p>
+                                                  <small class="text-muted"><i class="fa fa-clock-o"></i> 5 minutes ago
+                                                  </small>
+                                              </p>
+                                          </div>
+                                          <div class="timeline-body">
+                                              <p>Unloaded 192t at LG_PRIME</p>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="timeline-inverted">
+                                      <div class="timeline-badge warning"><i class="fa fa-credit-card"></i>
+                                      </div>
+                                      <div class="timeline-panel">
+                                          <div class="timeline-heading">
+                                              <h4 class="timeline-title">Fuel Update</h4>
+                                              <p>
+                                                  <small class="text-muted"><i class="fa fa-clock-o"></i> 6 minutes ago
+                                                  </small>
+                                              </p>
+                                          </div>
+                                          <div class="timeline-body">
+                                              <p>Fuel level is low, two cycles remaining</p>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li>
+                                      <div class="timeline-badge danger"><i class="fa fa-bomb"></i>
+                                      </div>
+                                      <div class="timeline-panel">
+                                          <div class="timeline-heading">
+                                              <h4 class="timeline-title">Accident</h4>
+                                              <p>
+                                                  <small class="text-muted"><i class="fa fa-clock-o"></i> 9 minutes ago
+                                                  </small>
+                                              </p>
+                                          </div>
+                                          <div class="timeline-body">
+                                              <p>Estimated delay: 20min</p>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="timeline-inverted">
+                                      <div class="timeline-badge success"><i class="fa"></i>
+                                      </div>
+                                      <div class="timeline-panel">
+                                          <div class="timeline-heading">
+                                              <h4 class="timeline-title">Status Report: 4% above average</h4>
+                                              <p>
+                                                  <small class="text-muted"><i class="fa fa-clock-o"></i> 13 minutes ago
+                                                  </small>
+                                              </p>
+                                          </div>
+                                          <div class="timeline-body">
+                                              <p>Efficiency of past 60 minutes is 4% above long-term average.</p>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
                           </div>
                           <!-- /.panel-body -->
-                            <!-- /.panel-heading -->
-
-                        </div>
+                      </div>
+                      <!-- /.panel -->
 
                     </div>
                     <!-- /.col-lg-8 -->
-                    <div class="col-lg-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <i class="fa fa-list fa-fw"></i> LoaderList
-                            </div>
-                            <!-- /.panel-heading -->
-                            <div class="panel-body">
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item">
-                                        <i class="fa fa-truck fa-fw"></i> Loader1
-                                            <span class="pull-right text-muted small"><em>5 minutes away</em>
-                                            </span>
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <i class="fa fa-truck fa-fw"></i> Loader2
-                                            <span class="pull-right text-muted small"><em>10 minutes away</em>
-                                            </span>
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <i class="fa fa-truck fa-fw"></i> Loader3
-                                            <span class="pull-right text-muted small"><em>x minutes away</em>
-                                            </span>
-                                    </a>
+                    <div class="col-lg-6">
 
+                                                                                          <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <i class="fa fa-bar-chart-o fa-fw"></i> Map
+                              <div id="minecontainer">
+<div id="minemap" style="height: 600px;"></div>
+   <div style="white-space: nowrap; text-align: center; padding: 6px 0;">
+     <a id="largeMapLink" target="_blank" href="https://www.google.com.au/maps/@-33.6389929,147.3893479,4592m/data=!3m1!1e3">View Larger Map</a> &nbsp; | &nbsp;
+     <a id="dirMapLink" target="_blank" href="https://www.google.com.au/maps/dir//Evolution+Mining%2FBarrick+Gold+Mine,+Lake+Cowal+NSW+2671/">Get Directions</a>
+  </div>
+</div>
+                          </div>
+                          <!-- /.panel-heading -->
 
-
-                                <!-- /.list-group -->
-                                <a href="#" class="btn btn-default btn-block">View All Alerts</a>
-                            </div>
-                            <!-- /.panel-body -->
-                        </div>
                       </div>
-                        <div class="chat-panel panel panel-default">
-                            <div style = "font-size: 20pt; font-weight: bold" class="panel-heading">
+                      <!-- /.panel -->
 
-                                <i class="fa fa-comments fa-fw"></i>
-                                Dispatch Dialogue
-                                </div>
-                            <!-- /.panel-heading -->
-                            <div class="panel-body">
-                                <ul class="chat">
-                                    <li class="left clearfix">
-                                            <span class="chat-img pull-left">
-                                                <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar"
-                                                     class="img-circle"/>
-                                            </span>
-
-                                        <div class="chat-body clearfix">
-                                            <div class="header">
-                                                <strong class="primary-font">Driver 1: Jack Sparrow</strong>
-                                                <small class="pull-right text-muted">
-                                                    <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
-                                                </small>
-                                            </div>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum
-                                                ornare dolor, quis ullamcorper ligula sodales.
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li class="right clearfix">
-                                            <span class="chat-img pull-right">
-                                                <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar"
-                                                     class="img-circle"/>
-                                            </span>
-
-                                        <div class="chat-body clearfix">
-                                            <div class="header">
-                                                <small class=" text-muted">
-                                                    <i class="fa fa-clock-o fa-fw"></i> 13 mins ago
-                                                </small>
-                                                <strong class="pull-right primary-font">Driver 2: Bhaumik Patel</strong>
-                                            </div>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum
-                                                ornare dolor, quis ullamcorper ligula sodales.
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li class="left clearfix">
-                                            <span class="chat-img pull-left">
-                                                <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar"
-                                                     class="img-circle"/>
-                                            </span>
-
-                                        <div class="chat-body clearfix">
-                                            <div class="header">
-                                                <strong class="primary-font">Driver 1: Jack Sparrow</strong>
-                                                <small class="pull-right text-muted">
-                                                    <i class="fa fa-clock-o fa-fw"></i> 14 mins ago
-                                                </small>
-                                            </div>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum
-                                                ornare dolor, quis ullamcorper ligula sodales.
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li class="right clearfix">
-                                            <span class="chat-img pull-right">
-                                                <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar"
-                                                     class="img-circle"/>
-                                            </span>
-
-                                        <div class="chat-body clearfix">
-                                            <div class="header">
-                                                <small class=" text-muted">
-                                                    <i class="fa fa-clock-o fa-fw"></i> 15 mins ago
-                                                </small>
-                                                <strong class="pull-right primary-font">Driver 2: Bhaumik Patel</strong>
-                                            </div>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum
-                                                ornare dolor, quis ullamcorper ligula sodales.
-                                            </p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- /.panel-body -->
-                            <div class="panel-footer">
-                                <div class="input-group">
-                                    <input id="btn-input" type="text" class="form-control input-sm"
-                                           placeholder="Type your message here..."/>
-                                        <span class="input-group-btn">
-                                            <button class="btn btn-warning btn-sm" id="btn-chat">
-                                                Send
-                                            </button>
-                                        </span>
-                                </div>
-                            </div>
-                            <!-- /.panel-footer -->
-                        </div>
   </div>
                     </div>
                     <!-- /.col-lg-4 -->
